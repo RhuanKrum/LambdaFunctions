@@ -25,13 +25,13 @@ public class TestLambdaSorting {
 		stringList.add("eee");
 		
 		System.out.println(" ### WORKING WITH ASC SORTED LIST ###");
-		LambdaSorting.sortStringIgnoreCase(stringList, LambdaSortingOptions.ASC);
+		LambdaSorting.sortList(stringList, LambdaSortingOptions.ASC);
 	
 		// Lambda function to iterate on all the strings
 		stringList.forEach(str -> System.out.println(str));
 
 		System.out.println(" ### WORKING WITH DESC SORTED LIST ###");
-		LambdaSorting.sortStringIgnoreCase(stringList, LambdaSortingOptions.DESC);
+		LambdaSorting.sortList(stringList, LambdaSortingOptions.DESC);
 
 		// Lambda function to iterate on all the strings
 		stringList.forEach(str -> System.out.println(str));

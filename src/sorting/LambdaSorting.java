@@ -15,7 +15,7 @@ public class LambdaSorting {
 	 * @param sortingOption - Sorting option available in the Enum LambdaSortingOptions
 	 * @return stringList - Sorted list according to the parameters
 	 */
-	public static List<String> sortStringIgnoreCase(List<String> stringList, LambdaSortingOptions sortingOption){
+	public static void sortList(List<String> stringList, LambdaSortingOptions sortingOption){
 		
 		Comparator<String> comparator = (var1, var2) ->{
 			
@@ -61,8 +61,6 @@ public class LambdaSorting {
 			
 		};
 		
-		Collections.sort(stringList, comparator);
-		
-		return stringList;
+		Collections.sort(stringList, comparator);;
 	}
 }
