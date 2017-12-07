@@ -24,19 +24,17 @@ public class TestLambdaSorting {
 		stringList.add("EEE");
 		stringList.add("eee");
 		
+		System.out.println(" ### WORKING WITH ASC SORTED LIST ###");
 		LambdaSorting.sortStringIgnoreCase(stringList, LambdaSortingOptions.ASC);
 	
-		System.out.println(" ### PRINTING ASC SORTED LIST ###");
-		for(String string : stringList) {
-			System.out.println(string);
-		}
+		// Lambda function to iterate on all the strings
+		stringList.forEach(str -> System.out.println(str));
 
-		System.out.println(" ### PRINTING DESC SORTED LIST ###");
+		System.out.println(" ### WORKING WITH DESC SORTED LIST ###");
 		LambdaSorting.sortStringIgnoreCase(stringList, LambdaSortingOptions.DESC);
-	
-		for(String string : stringList) {
-			System.out.println(string);
-		}
+
+		// Lambda function to iterate on all the strings
+		stringList.forEach(str -> System.out.println(str));
 	}
 
 }
